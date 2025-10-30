@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.env
+.venv/
+
+# Node
+node_modules/
+
+# VSCode/Cursor
+.vscode/
+.cursor/
+
+# OS
+.DS_Store
+Thumbs.db
