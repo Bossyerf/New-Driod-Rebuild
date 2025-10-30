@@ -1,7 +1,10 @@
 from typing import Dict, Any
 
-# TODO: implement episode storage and reward shaping
+# Simple reward shaping; integrate real UE signals later
 
 def step(task: str, result: Dict[str, Any]) -> float:
-    # return a placeholder reward
-    return 1.0 if result.get("passed") else -1.0
+    if result.get("passed"):
+        return 1.0
+    if result.get("failed"):
+        return -1.0
+    return 0.0
